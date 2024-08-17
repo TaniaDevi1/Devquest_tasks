@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Sample HTML Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .form-container, .table-container, .video-container, .iframe-container {
+            margin-bottom: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to My Sample HTML Page</h1>
+        
+        <div>
+            <h2>This page contains various HTML tags</h2>
+            <p>This is a paragraph inside a div. HTML tags such as span, div, and others are used to structure content.</p>
+        </div>
+
+        <div class="form-container">
+            <h3>Sign Up Form</h3>
+            <form action="#">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br><br>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br><br>
+                </div>
+                <div>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message"></textarea><br><br>
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div class="table-container">
+            <h3>Sample Table</h3>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Message</th>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>john@example.com</td>
+                    <td>Hello, world!</td>
+                </tr>
+                <tr>
+                    <td>Jane Doe</td>
+                    <td>jane@example.com</td>
+                    <td>Nice to meet you!</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="video-container">
+            <h3>Sample Video</h3>
+            <video width="400" controls>
+                <source src="sample-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Watch the above video for more information.</p>
+        </div>
+
+        <div class="iframe-container">
+            <h3>Sample Iframe</h3>
+            <iframe src="https://example.com" width="600" height="300"></iframe>
+            <p>This iframe embeds content from another site.</p>
+        </div>
+    </div>
+
+</body>
+</html>
